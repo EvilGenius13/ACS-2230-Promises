@@ -6,16 +6,16 @@
  * 1. Read over the code that follows. What will be printed to the console when
  *    it runs? Run the code using `node challenge2.js` and verify that your
  *    expectation was correct.
- * 
+ * It will print "HELLO THERE, DUCKY" and "MAKE SCHOOL IS AWESOME!!!"
  * 
  * 2. What happens if greet() fails? Make it fail by changing 'name' to a number
  *    instead of a string. What happens? Does uppercaser() still run?
- * 
+ * It won't run because the promise rejects. It throws and displays the error through catch()
  * 
  * 3. What happens if greet() succeeds and uppercaser() fails? Modify your code
  *    to achieve this result by changing the values of 'name' and 'my_str' and
  *    run the code again.
- * 
+ * Greet runs but uppercaser gets rejected and throws an error through catch()
  * 
  * 4. Write a method that takes a string as input and returns the input string
  *    with a space added between each character. E.g. 'foo' -> 'f o o'
