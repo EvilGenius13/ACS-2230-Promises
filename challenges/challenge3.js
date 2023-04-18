@@ -6,14 +6,17 @@
  * 1. Read over the `greetAndUppercase` function. This function uses
  *    Async/Await. How is this function different than a regular (non-async)
  *    function? What is its return type?
- * 
+ * Essentially, the async keyword says that it's asynchronous meaning
+ * it can pause an execution to let other code to run and resume itself later.
+ * It returns a promise object with the final result
  * 
  * 2. Uncomment block #1 and run the code using `node challenge3.js`. What is
  *    printed when we use `greetAndUppercase` like a regular function?
- * 
+ * We aren't handling the promise, but we're calling it 
+ * so we just get that it's pending.
  * 
  * 3. Uncomment block #2 and run the code again. What happens now?
- * 
+ * We get the full promise and it completes so we get the greeting uppercased.
  * 
  * 4. Write an asynchronous method 'spacer' that takes a string as input and 
  *    returns the input string with a space added between each character. You 
